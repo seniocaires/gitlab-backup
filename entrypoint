@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/lib/jvm/java-8-openjdk-amd64/bin/java -DURL_GITLAB=$URL_GITLAB -DUSUARIO=$USUARIO -DSENHA=$SENHA -DBACKUP_PATH=$BACKUP_PATH -jar /app/run.jar
