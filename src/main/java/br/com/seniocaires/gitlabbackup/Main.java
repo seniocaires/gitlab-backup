@@ -247,8 +247,8 @@ public class Main {
       HtmlPage page = webClientPrincipal.getPage(URL_GITLAB + "/users/sign_in");
 
       mensagem("Preenchedo campos formulário ...");
-      page.getElementById("username").setAttribute("value", USUARIO);
-      page.getElementById("password").setAttribute("value", SENHA);
+      page.getElementById("user_login").setAttribute("value", USUARIO);
+      page.getElementById("user_password").setAttribute("value", SENHA);
       page.getElementByName("commit").click();
     } catch (FailingHttpStatusCodeException e) {
       Logger.getLogger(Main.class.getName()).log(Level.SEVERE, e.getMessage(), e);
