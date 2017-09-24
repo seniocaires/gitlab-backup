@@ -4,7 +4,7 @@ ADD . /build
 
 WORKDIR /build
 
-RUN mvn dependency:resolve verify package
+RUN mvn install
 
 FROM java:8
 
